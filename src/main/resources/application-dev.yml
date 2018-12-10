@@ -1,2 +1,21 @@
 server:
   port: 8895
+
+spring:
+  application:
+    name: personal-xzh
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://rm-bp13dz4j5kb15k6d0to.mysql.rds.aliyuncs.com:3306/jc519?autoReconnect=true&useUnicode=true&characterEncoding=utf-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai&useSSL=true
+    username: jc_write_01
+    password: HyfzWrite!@#qwe893
+  data:
+    solr:
+      host: http://101.37.147.193:8983/solr
+      collection:
+        noControlMedicineGoods: ${spring.data.solr.host}/noControlMedicineGoods
+        controlMedicineGoods: ${spring.data.solr.host}/controlMedicineGoods
+        hotWords: ${spring.data.solr.host}/hotWords
+
+logging:
+  level: DEBUG
