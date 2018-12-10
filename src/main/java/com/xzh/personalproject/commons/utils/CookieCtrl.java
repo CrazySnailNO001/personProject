@@ -70,7 +70,7 @@ public class CookieCtrl {
         try {
             // 解决Cookie中保存中文
             value = URLEncoder.encode(value, "UTF-8");
-        } catch (UnsupportedEncodingException e) {
+        } catch (UnsupportedEncodingException e) {//4444
             e.printStackTrace();
         } catch (Exception e1) {
             e1.printStackTrace();
