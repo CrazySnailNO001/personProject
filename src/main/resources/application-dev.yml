@@ -16,6 +16,14 @@ spring:
         noControlMedicineGoods: ${spring.data.solr.host}/noControlMedicineGoods
         controlMedicineGoods: ${spring.data.solr.host}/controlMedicineGoods
         hotWords: ${spring.data.solr.host}/hotWords
+  freemarker:
+#    template-loader-path: classpath:/templates
+    suffix: .html
+    settings.number_format: 0.####
+    check-template-location: true
+    cache: false
+    template_update_delay: 0
 
 logging:
-  level: DEBUG
+  level:
+    com.xzh: debug
