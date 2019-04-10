@@ -12,9 +12,10 @@ import org.springframework.web.servlet.ModelAndView;
  * @modify By:
  **/
 @RestController
-@RequestMapping("/")
+@RequestMapping("/home")
 public class HomeController {
 
+    //    @SystemControllerLog
     @GetMapping("/test")
     public ModelAndView test(ModelAndView modelAndView) {
         modelAndView.setViewName("index");
